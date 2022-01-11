@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { InterestFormComponent } from './components/interest-form/interest-form.component';
 import { InterestCalculateComponent } from './components/interest-calculate/interest-calculate.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InterestFormComponent,
-    InterestCalculateComponent
+    InterestCalculateComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
