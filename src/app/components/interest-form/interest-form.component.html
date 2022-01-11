@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-header">
+        <h4>Calculate return on investment</h4>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">A = P(1 + rt)</h5>
+
+        <div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">$</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Loan amount (P)" id="loan" [(ngModel)]="interestForm.loanAmount">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">%</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Interest amount (r)" id="interest" [(ngModel)]="interestForm.interestAmount">
+            </div>
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Years to pay (t)" id="years" [(ngModel)]="interestForm.years">
+            </div>
+
+            <button type="button" (click)="calculateInterest()" class="btn btn-secondary input-block-level">Calculate</button>
+        </div>
+    </div>
+</div>
+
+
+<app-interest-calculate [interestData]="interestForm"></app-interest-calculate>

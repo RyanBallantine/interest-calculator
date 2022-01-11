@@ -1,0 +1,9 @@
+<div *ngIf = "show" class="container">
+    <h2 [ngClass]="totalReturn ? 'show' : 'hide'" class="mt-3">
+        {{ 'Your return: R' + this.totalReturn }}
+    </h2>
+
+    <h2 [ngClass]="totalInterest ? 'show' : 'hide'" class="mt-3">
+        {{ 'Your Interest: R' + this.totalInterest }}
+    </h2>
+</div>
