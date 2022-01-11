@@ -31,5 +31,4 @@ export class InterestCalculateComponent implements OnInit {
       this.totalInterest = (Number(this.totalReturn) - loan).toFixed(2);
     }
   }
-
 }
