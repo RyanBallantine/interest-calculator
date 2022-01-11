@@ -21,8 +21,7 @@
             <div class="input-group mb-3">
                 <input type="number" class="form-control" placeholder="Years to pay (t)" id="years" [(ngModel)]="interestForm.years">
             </div>
-
-            <button type="button" (click)="calculateInterest()" class="btn btn-secondary input-block-level">Calculate</button>
+            <button type="button" (click)="calculateInterest()" class="btn btn-secondary input-block-level" [disabled]="!isValid()">Calculate</button>
         </div>
     </div>
 </div>
