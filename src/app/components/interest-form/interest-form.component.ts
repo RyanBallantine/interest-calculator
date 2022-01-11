@@ -20,4 +20,8 @@ export class InterestFormComponent implements OnInit {
   calculateInterest() {
     this.interestCalc.calculateInterest();
   }
+
+  isValid() {
+    return (this.interestForm.interestAmount != null && this.interestForm.loanAmount != null && this.interestForm.years != null);
+  }
 }
